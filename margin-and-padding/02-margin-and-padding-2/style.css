@@ -1,27 +1,59 @@
+/*
+X There is 8px between the edge of the card and its content (the blue sections).
+- There is an 8px gap between each of the blue sections inside the card.
+X The title of the card uses a 16px font.
+X There are 8px between the title text and the edge of the title section.
+X The content section has 16px space on the top and bottom, and 8px on either side.
+X Everything inside the `.button-container` section is centered, and there is 8px padding.
+X The Big Button is centered on its own line.
+X The Big Button has 24px space on the sides, and 8px on top and bottom.
+*/
+
+
 body {
   background: #eee;
   font-family: sans-serif;
+  box-sizing: border-box;
 }
 
 .card {
   width: 400px;
   background: #fff;
   margin: 16px auto;
+  padding: 8px;
 }
 
 .title {
   background: #e3f4ff;
+  font-size: 16px;
+  padding: 8px;
+  margin-top: 0px;
+  margin-bottom: 8px;
 }
 
 .content {
   background: #e3f4ff;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-left: 8px;
+  padding-right: 8px;
 }
 
 .button-container {
   background: #e3f4ff;
+  padding: 8px;
+  text-align: center;
+  margin-top: 8px;
+  margin-bottom: 0px;
 }
 
 button {
   background: white;
   border: 1px solid #eee;
+  padding-top: 8;
+  padding-bottom: 8px;
+  padding-left: 24px;
+  padding-right: 24px;
+  display: block;
+  margin: auto;
 }
